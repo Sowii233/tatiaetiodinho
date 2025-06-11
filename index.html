@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presente</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body background="eita3.jpg">
+    <br>
+    <br>
+    <audio autoplay loop id="audio">
+        <source src="Equalize.mp3" type="audio/mp3">
+    </audio>
+    <button id="btnSom" class="btn"><img src="mudo.png" height="40px" width="40px" alt=""></button>
+    <script>
+        const audio = document.getElementById('audio');
+        const btn = document.getElementById('btnSom');
+
+        btn.addEventListener('click', () => {
+            audio.play();
+            btn.disabled = true;
+        });
+    </script>
+    <h1 class="h1"> "Meu amor, meu companheiro de alma e melhor amigo... entre todos os caminhos, é você que eu escolho
+        — hoje, amanhã e em todos os dias da minha vida."</h1>
+    <div class="div">
+        <div class="container">
+
+            <div class="container2">
+                <img src="eles.jpg" alt="" class="slider on">
+                <img src="eles2.jpg" alt="" class="slider">
+                <img src="eles4.jpg" alt="" class="slider">
+                <img src="eles5.jpg" alt="" class="slider ">
+                <img src="eles6.jpg" alt="" class="slider">
+                <img src="eles7.jpg" alt="" class="slider">
+                <img src="eles8.jpg" alt="" class="slider ">
+                <img src="eles9.jpg" alt="" class="slider">
+                <img src="eles10.jpg" alt="" class="slider">
+                <img src="eles11.jpg" alt="" class="slider ">
+                <img src="eles12.jpg" alt="" class="slider">
+                <img src="eles13.jpg" alt="" class="slider">
+                <img src="eles14.jpg" alt="" class="slider ">
+                <img src="eles15.jpg" alt="" class="slider">
+                <img src="eles16.jpg" alt="" class="slider">
+                <img src="eles17.jpg" alt="" class="slider">
+                <img src="eles18.jpg" alt="" class="slider">
+                <img src="eles19.jpg" alt="" class="slider">
+                <img src="eles20.jpg" alt="" class="slider">
+                <img src="eles21.jpg" alt="" class="slider">
+                <img src="eles22.jpg" alt="" class="slider">
+                <img src="eles23.jpg" alt="" class="slider">
+                <img src="eles24.jpg" alt="" class="slider">
+                <img src="eles25.jpg" alt="" class="slider">
+                <img src="eles26.jpg" alt="" class="slider">
+                <img src="eles27.jpg" alt="" class="slider">
+                <img src="eles28.jpg" alt="" class="slider">
+                <img src="eles29.jpg" alt="" class="slider">
+                <img src="eles30.jpg" alt="" class="slider">
+                <img src="eles31.jpg" alt="" class="slider">
+                <img src="eles32.jpg" alt="" class="slider">
+                <img src="eles33.jpg" alt="" class="slider">
+                <img src="eles34.jpg" alt="" class="slider">
+                <img src="eles35.jpg" alt="" class="slider">
+                <img src="eles36.jpg" alt="" class="slider">
+                <img src="eles27.jpg" alt="" class="slider">
+                <img src="eles38.jpg" alt="" class="slider">
+                <img src="eles39.jpg" alt="" class="slider">
+                <img src="eles40.jpg" alt="" class="slider">
+                <img src="eles41.jpg" alt="" class="slider ">
+                <img src="eles42.jpg" alt="" class="slider">
+                <img src="eles43.jpg" alt="" class="slider">
+                <img src="eles44.jpg" alt="" class="slider ">
+                <img src="eles45.jpg" alt="" class="slider">
+                <img src="eles46.jpg" alt="" class="slider">
+                <img src="eles47.jpg" alt="" class="slider ">
+                <img src="eles48.jpg" alt="" class="slider">
+                <img src="eles49.jpg" alt="" class="slider">
+                <img src="eles50.jpg" alt="" class="slider ">
+                <img src="eles51.jpg" alt="" class="slider">
+                <img src="eles52.jpg" alt="" class="slider">
+                <img src="eles53.jpg" alt="" class="slider">
+                <img src="eles54.jpg" alt="" class="slider">
+                <img src="eles55.jpg" alt="" class="slider">
+                <img src="eles56.jpg" alt="" class="slider">
+                <img src="eles57.jpg" alt="" class="slider">
+                <img src="eles58.jpg" alt="" class="slider">
+                <img src="eles59.jpg" alt="" class="slider">
+                <img src="eles60.jpg" alt="" class="slider">
+                <img src="eles61.jpg" alt="" class="slider">
+                <img src="eles62.jpg" alt="" class="slider">
+                <img src="eles63.jpg" alt="" class="slider">
+                <img src="eles64.jpg" alt="" class="slider">
+                <img src="eles65.jpg" alt="" class="slider">
+            </div>
+
+        </div>
+        <br>
+        <div class="div2">
+            <button id="prev"><img src="flecha.png" alt="prev"></button>
+            <button id="next"><img src="flecha.png" alt="next"></button>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br><br>
+    <br>
+
+    <div class="h1">
+        <p>Você é minha melhor companhia fazem:</p>
+        <div id="contador">Carregando...</div>
+    </div>
+    <script>
+        const dataInicio = new Date("2000-02-22T21:00:00"); // data que começou
+
+        function atualizarContador() {
+            const agora = new Date();
+            let anos = agora.getFullYear() - dataInicio.getFullYear();
+            let meses = agora.getMonth() - dataInicio.getMonth();
+            let dias = agora.getDate() - dataInicio.getDate();
+            let horas = agora.getHours() - dataInicio.getHours();
+            let minutos = agora.getMinutes() - dataInicio.getMinutes();
+            let segundos = agora.getSeconds() - dataInicio.getSeconds();
+
+            // Ajustes para valores negativos
+            if (segundos < 0) {
+                segundos += 60;
+                minutos--;
+            }
+            if (minutos < 0) {
+                minutos += 60;
+                horas--;
+            }
+            if (horas < 0) {
+                horas += 24;
+                dias--;
+            }
+            if (dias < 0) {
+                // Assume mês anterior teve 30 dias por simplicidade
+                dias += 30;
+                meses--;
+            }
+            if (meses < 0) {
+                meses += 12;
+                anos--;
+            }
+
+            document.getElementById("contador").innerText =
+                `${anos} ano(s), ${meses} mês(es), ${dias} dia(s), ` +
+                `${String(horas).padStart(2, '0')}:${String(minutos).padStart(2, '0')}:${String(segundos).padStart(2, '0')}`;
+        }
+
+        // Atualiza a cada segundo
+        setInterval(atualizarContador, 1000);
+        atualizarContador(); // Atualiza logo ao carregar
+    </script>
+
+
+</body>
+
+</html>
